@@ -28,6 +28,8 @@
     background: yellow;
 }
 
+
+/*  */ 
 .imageArea {
     position: relative;
     width: 400px;
@@ -39,20 +41,39 @@
     top: 0;
     height: 100%;
     width: 100%;
-    cursor: pointer;
+    cursor: pointer; /* uzerone gelme ozelligi aktif edildi*/
     text-align: center;
     opacity: 0;
     transition:opacity  1s ease;
     
 }
 
-.imageTitle h2{
+.imageTitle h2{  /* uzerone gelme ozelligi uygulandiginds okiusacak islemler */ 
     background-color: rgba(231,76,60, 1);
     color: #fff;
 
 }
-
 .imageTitle:hover{
     opacity: 0.8;
+    
 
+}
+
+/*      transform : fonksion (parametre)*/ 
+
+
+.ImageField{
+    width: 400px;
+    height: 200px;
+    margin-top: 50px;
+}
+.ImageField:hover{
+    transform: translate(40px, 40px);  /* fonksionun istedigimiz eksende hareket ettirmek icin 
+    sadece translate sonua X,y gibi ifadeler getiririz*/
+    transform: scale(.5, .5); /* secilen kismlarda genislik ve yukseklik olarak olcekleme yapar */
+
+    transform:rotate(-30deg);
+    /* transform-origin: ; bu ozellik ile dondurecegimiz yonu belirleyebiliriz */
+    transform:skew(); /* egim vermeye yarar*/
+    transform:matrix(scaleX(),skewY(),skewX(),translateX(),translateY()); /* icine 6 adet parametre alir ve hepsinin birlesimi olarak verir */
 }

@@ -27,3 +27,32 @@
     height: 300px;
     background: yellow;
 }
+
+.imageArea {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.imageTitle {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition:opacity  1s ease;
+    
+}
+
+.imageTitle h2{
+    background-color: rgba(231,76,60, 1);
+    color: #fff;
+
+}
+
+.imageTitle:hover{
+    opacity: 0.8;
+
+}

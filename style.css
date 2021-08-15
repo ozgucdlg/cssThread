@@ -77,3 +77,24 @@
     transform:skew(); /* egim vermeye yarar*/
     transform:matrix(scaleX(),skewY(),skewX(),translateX(),translateY()); /* icine 6 adet parametre alir ve hepsinin birlesimi olarak verir */
 }
+
+
+.germanShepard{
+    margin-top:100px; 
+    margin-left: 100px;
+    background: #f5f5f5;
+    width: 200px; 
+    height:200px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.8);
+}
+
+.germanShepard img{
+    border-radius: 20px;
+    transition:all 1s;
+}
+img:hover{
+    transform: translateX(600px)  rotate(360deg);
+    
+
+}

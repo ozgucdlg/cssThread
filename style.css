@@ -139,16 +139,35 @@ img:hover{
     left:50px;
     width:100px; 
     height:100px;
-    background:red;        
+    background:red;       
+    
+    /* keyframe i baslatmak icin gecerli olan ilk adim isimlendirme*/
     animation-name: changeColor;
+    /* animasyoun suresi belirlenir */
     animation-duration:6s;
+    /* animasyonaun baslama gecikmasei ayarlanir*/
+    animation-delay: 3s;
+    /*animasyonun tekrar etme sayisi icin yazilir cycle, sonsuz olmasi icin infinite yazilir*/ 
+    animation-iteration-count: 2;
+
+    /* animasyon ters calismiasi yon olarak saglar //   alternate secilirse bir duz bir ters calisir*/
+    animation-direction: reverse;
 }
+
+/* 2. adim keyframe koyarak renk yada konum parametreleri olusturulur*/
 @keyframes changeColor {
-   0%  {background-color: red;}
+  /*  0%  {background-color: red;}
    25% {background-color: orange;}
    50% {background-color:blue;}
    75% {background-color:yellow;}
-   100% {background-color: brown;}
+   100% {background-color: brown;} 
+   bu ozellikler sadece renk degisimi icindir bununla beraber konum degisiminide saglayabiliriz*/
+
+   0%  {background-color: red;  left:50px; top:225px;}
+   25% {background-color: orange; left:200px; top:225px;}
+   50% {background-color:blue;   left:200px; top:425px;}
+   75% {background-color:yellow;   left:50px; top:425px;}
+   100% {background-color: brown;   left:50px; top:225px;}
 }
 
 

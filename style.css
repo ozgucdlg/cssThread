@@ -133,5 +133,23 @@ img:hover{
 
 }
 
+.animation{
+    position: relative;    
+    top:225px;
+    left:50px;
+    width:100px; 
+    height:100px;
+    background:red;        
+    animation-name: changeColor;
+    animation-duration:6s;
+}
+@keyframes changeColor {
+   0%  {background-color: red;}
+   25% {background-color: orange;}
+   50% {background-color:blue;}
+   75% {background-color:yellow;}
+   100% {background-color: brown;}
+}
+
 
 

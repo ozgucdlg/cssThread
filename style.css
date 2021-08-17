@@ -98,3 +98,40 @@ img:hover{
     
 
 }
+
+.bucket{
+    position: relative;
+    margin-top: 100px;
+    transform-style: preserve-3d;
+    transform:rotateX(-20deg)
+    rotateY(-40deg) perspective(200px);
+
+}
+
+.bucket1, .bucket2, .bucket3 {
+    position: absolute;
+    width:200px;
+    height:200px;
+}
+
+.bucket1{
+    background: red;
+    transform:translateZ(0px)
+    translateY(50px)
+    translateX(100px);
+
+}
+.bucket2{
+    background: yellow;
+    transform:translateZ(-100px);
+
+}
+
+.bucket3{
+    background: black;
+    transform:translateZ(-200px);
+
+}
+
+
+

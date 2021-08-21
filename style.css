@@ -194,6 +194,30 @@ img:hover{
     position:absolute;
     
 }
+.ikonlar{
+    margin-top: 900px;
+    margin-bottom:150px;
+}
+.searchBar {
+    margin-left: 5px;
+    width: 125px;
+    height: 14px;
+    border-radius:5px;
+}
 
+.display3:hover{
+    background: red;
+    color:black;
+    width:150px;
+    height:150px;
+    transition: all 2s ease;
+    
+}
+
+
+table,tr,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
 

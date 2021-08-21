@@ -170,5 +170,30 @@ img:hover{
    100% {background-color: brown;   left:50px; top:225px;}
 }
 
+.display1{
+    display:block;
+    background: blue;
+    color: white;
+
+}
+
+.display2{
+    display: inline;
+    background:blue;
+    color: white;
+
+}
+
+.display3{
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background:blue;
+    color: white;
+    margin-top:25px;
+    position:absolute;
+    
+}
+
 
 

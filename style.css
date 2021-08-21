@@ -4,12 +4,50 @@
 
 }
 
+.navBar{
+    position: fixed;
+    width:100px;
+    height: 450px;
+    top: 100px;
+    right: 0;
+    background:rgb(139, 137, 141);
+}
+
+.social-icons{
+    width:70px;
+    height:420px;
+    background:white;
+    margin-top: 10px;
+    margin-left: 15px;      
+    display:flex;   /* yerlestirme uyhulamasinin baslangici icin gecerli */
+    flex-direction:column;   /* burada default olara row dur, burada colum dersek tukaridan asagiya karakter gosterir*/
+    justify-content: flex-start; /*dikey icin gerekli ozelliklerin kullanildigi baslik*/
+    align-items: center; /* yatay icin gerekli ozelliklerin kullanildigi yer*/ 
+    box-sizing: border-box;
+}
+.social-icons .fab   {
+    width: 70px;
+    height: 100px;
+    margin-top: 5px;
+    padding-top: 30px;    
+    display: block;
+        
+}
+
+.fa-facebook-messenger{
+    background:red;
+    margin-left: 10px;
+    flex-grow: 1;
+    
+}
+
+
 .box {
     width: 100px;
     height: 100px;
     background: red;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 130px;
     transition-property: all;
     transition-duration: 3s;
     transition-timing-function: ease-in-out;    
@@ -218,6 +256,23 @@ img:hover{
 table,tr,td,th {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+
+.outer{    
+    width:300px; 
+    height:300px;
+    background: #a7a7a7;
+    
+
+}
+
+.inner{
+    width:75px;
+    height:75px;
+    background:blue;
+    position: absolute;
+    
 }
 
 
